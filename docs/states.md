@@ -4,7 +4,6 @@ Lets look at one of the states for the basic bgp configuration lab.
 
 ```
 #/srv/salt/states/basic_bgp_render.sls
-{% set hostname = grains.get('host') %}
 render the output:
   file.managed:
     - name: /srv/salt/templates/intended/configs/{{ hostname }}.cfg
