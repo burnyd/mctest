@@ -13,8 +13,6 @@ render the output:
 
 Taking this state line by line. 
 
-*{% set hostname = grains.get('host') %}* - uses the grains to find out the salt minion that it is targeting and turns it into a string called {{ hostname }} which we can then render each time.
-
 *render the output:* - This can be anything just the name of the state.
 
 *file.managed:* - Using the [file module](https://docs.saltstack.com/en/latest/ref/modules/all/salt.modules.file.html) to later pass in name, source and template.
